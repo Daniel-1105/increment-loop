@@ -17,14 +17,15 @@ let mySprite = sprites.create(img`
     . . . . 3 3 5 5 5 5 3 3 . . . . 
     . . . . . f f f f f f . . . . . 
     `, SpriteKind.Player)
-for (let index = 0; index < 10; index++) {
+for (let index = 0; index <= 10; index++) {
+    increase = 5 * index
     pause(200)
-    mySprite.x += 1 + increase
+    mySprite.x += 5 + increase
     pause(200)
-    mySprite.y += -2 - increase
+    mySprite.y += -6 - increase
     pause(200)
-    mySprite.x += -3 - increase
+    mySprite.x += -7 - increase
     pause(200)
-    mySprite.y += 4 + increase
+    mySprite.y += 8 + increase
     increase += 4
 }
